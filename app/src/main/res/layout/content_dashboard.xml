@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:src="@drawable/biimage"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+    `<LinearLayout
+        android:id="@+id/linear_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:id="@+id/linear_single_pickuplist_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_list"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/pickup_list"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_complete_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_success"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/completed_pickup"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_pickup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintTop_toBottomOf="@id/linear_pickup">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:id="@+id/linear_autopickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_autolist"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auto PickList"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+               android:id="@+id/linear_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_logout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>`
+
+</androidx.constraintlayout.widget.ConstraintLayout>

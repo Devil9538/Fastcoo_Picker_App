@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/total_job_hrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Completed"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12.5sp"
+            android:textStyle="bold"
+            android:background="@drawable/ic_strip1"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_pallet"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:maxLines="1"
+            android:text="Details"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/main_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/category_image"
+            card_view:layout_constraintTop_toTopOf="@+id/category_image" />
+
+        <ImageView
+            android:id="@+id/img_slip"
+            android:layout_width="8.7dp"
+            android:layout_height="10.33dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_slip"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_detail"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_detail" />
+
+        <TextView
+            android:id="@+id/tv_slip_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.6dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Bangalore"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            card_view:layout_constraintBottom_toBottomOf="@+id/img_slip"
+            card_view:layout_constraintStart_toEndOf="@+id/img_slip"
+            card_view:layout_constraintTop_toTopOf="@+id/img_slip" />
+
+        <ImageView
+            android:id="@+id/img_sku"
+            android:layout_width="8.7dp"
+            android:layout_height="10.33dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_sku"
+            card_view:layout_constraintStart_toStartOf="@+id/img_slip"
+            card_view:layout_constraintTop_toBottomOf="@+id/img_slip" />
+
+        <TextView
+            android:id="@+id/tv_sku"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.6dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Bangalore"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            card_view:layout_constraintBottom_toBottomOf="@+id/img_sku"
+            card_view:layout_constraintStart_toEndOf="@+id/img_sku"
+            card_view:layout_constraintTop_toTopOf="@+id/img_sku" />
+
+        <ImageView
+            android:id="@+id/img_ean"
+            android:layout_width="8.7dp"
+            android:layout_height="10.33dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/ic_booking"
+            card_view:layout_constraintStart_toStartOf="@+id/img_sku"
+            card_view:layout_constraintTop_toBottomOf="@+id/img_sku" />
+
+        <TextView
+            android:id="@+id/tv_ean"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.6dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Bangalore"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            card_view:layout_constraintBottom_toBottomOf="@+id/img_ean"
+            card_view:layout_constraintStart_toEndOf="@+id/img_ean"
+            card_view:layout_constraintTop_toTopOf="@+id/img_ean" />
+
+        <ImageView
+            android:id="@+id/img_booking"
+            android:layout_width="8.7dp"
+            android:layout_height="10.33dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_ui"
+            card_view:layout_constraintStart_toStartOf="@+id/img_ean"
+            card_view:layout_constraintTop_toBottomOf="@+id/img_ean" />
+
+        <TextView
+            android:id="@+id/tv_bookid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.6dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Bangalore"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            card_view:layout_constraintBottom_toBottomOf="@+id/img_booking"
+            card_view:layout_constraintStart_toEndOf="@+id/img_booking"
+            card_view:layout_constraintTop_toTopOf="@+id/img_booking" />
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="8.7dp"
+            android:layout_height="10.33dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_success"
+            card_view:layout_constraintStart_toStartOf="@+id/img_booking"
+            card_view:layout_constraintTop_toBottomOf="@+id/img_booking"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.6dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Bangalore"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            card_view:layout_constraintBottom_toBottomOf="@+id/img_status"
+            card_view:layout_constraintStart_toEndOf="@+id/img_status"
+            card_view:layout_constraintTop_toTopOf="@+id/img_status" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

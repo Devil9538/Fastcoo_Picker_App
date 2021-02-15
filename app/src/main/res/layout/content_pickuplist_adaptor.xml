@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0ECEC	">
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginRight="85dp"
+            android:text="10"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12.5sp"
+            android:textStyle="bold"
+            android:background="@drawable/ic_strip1"
+            app:layout_constraintTop_toTopOf="@+id/tv_total_pending"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_total_pending"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_total_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="2dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="9"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12.5sp"
+            android:textStyle="bold"
+            android:background="@drawable/ic_strip2"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_list"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_pickup_id"
+            card_view:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+
+        <TextView
+            android:id="@+id/tv_pickup_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/lato_bold"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="Delivery Executive"
+            android:textColor="@color/main_text"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/category_image"
+            card_view:layout_constraintTop_toTopOf="@+id/category_image" />
+
+        <LinearLayout
+            android:id="@+id/linear_single"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            app:layout_constraintTop_toBottomOf="@id/category_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_single"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_border_red_style"
+                android:text="@string/single_pickup"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_regular"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_batch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            app:layout_constraintLeft_toRightOf="@id/linear_single"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/category_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/btn_batch"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_border_red_style"
+                android:text="@string/batch_pickup"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato_regular"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+

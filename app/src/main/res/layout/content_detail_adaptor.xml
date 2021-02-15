@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    android:id="@+id/post_card_view">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutMain">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="In Process"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12.5sp"
+            android:textStyle="bold"
+            android:background="@drawable/ic_strip1"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/img_category_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pickuplist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toStartOf="@id/img_category_image"
+            card_view:layout_constraintTop_toTopOf="@id/img_category_image"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            android:text="Picking Details"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/main_text"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        
+        <ImageView
+            android:id="@+id/img_pickup"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:layout_constraintStart_toStartOf="@id/tv_pickuplist"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_pickuplist"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/ic_list"/>
+
+        <TextView
+            android:id="@+id/tv_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_pickup"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_pickup"
+            card_view:layout_constraintTop_toTopOf="@id/img_pickup"
+            android:text="Bangalore"
+            android:layout_marginLeft="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/img_stock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:layout_constraintStart_toStartOf="@id/img_pickup"
+            card_view:layout_constraintTop_toBottomOf="@id/img_pickup"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_list"/>
+
+        <TextView
+            android:id="@+id/tv_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_stock"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_stock"
+            card_view:layout_constraintTop_toTopOf="@id/img_stock"
+            android:text="Bangalore"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/img_sku"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:layout_constraintStart_toStartOf="@id/img_stock"
+            card_view:layout_constraintTop_toBottomOf="@id/img_stock"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_sku"/>
+
+        <TextView
+            android:id="@+id/tv_sku_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_sku"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_sku"
+            card_view:layout_constraintTop_toTopOf="@id/img_sku"
+            android:text="Bangalore"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_piece"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:layout_constraintStart_toStartOf="@id/img_sku"
+            card_view:layout_constraintTop_toBottomOf="@id/img_sku"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_piece"/>
+
+        <TextView
+            android:id="@+id/tv_piece_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_piece"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_piece"
+            card_view:layout_constraintTop_toTopOf="@id/img_piece"
+            android:text="Bangalore"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_shelve"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:layout_constraintStart_toStartOf="@id/img_piece"
+            card_view:layout_constraintTop_toBottomOf="@id/img_piece"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_list"/>
+
+        <TextView
+            android:id="@+id/tv_shelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_shelve"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_shelve"
+            card_view:layout_constraintTop_toTopOf="@id/img_shelve"
+            android:text="Bangalore"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_scancount"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:layout_constraintStart_toStartOf="@id/img_shelve"
+            card_view:layout_constraintTop_toBottomOf="@id/img_shelve"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_piece"/>
+
+        <TextView
+            android:id="@+id/tv_count_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_scancount"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_scancount"
+            card_view:layout_constraintTop_toTopOf="@id/img_scancount"
+            android:text="Bangalore"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_book_detail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:layout_constraintStart_toStartOf="@id/img_scancount"
+            card_view:layout_constraintTop_toBottomOf="@id/img_scancount"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_slipno"/>
+
+        <TextView
+            android:id="@+id/tv_book_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_book_detail"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_book_detail"
+            card_view:layout_constraintTop_toTopOf="@id/img_book_detail"
+            android:text="Bangalore"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_slip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/img_book_detail"
+            card_view:layout_constraintTop_toBottomOf="@id/img_book_detail"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="106dp"
+                android:src="@drawable/ic_shipmentlist" />
+
+            <TextView
+                android:id="@+id/tv_slip_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bangalore"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@id/img_book_detail"
+            card_view:layout_constraintTop_toBottomOf="@id/linear_slip"
+            card_view:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="106dp"
+                android:src="@drawable/ic_totes" />
+
+            <TextView
+                android:id="@+id/tv_totes_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Bangalore" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

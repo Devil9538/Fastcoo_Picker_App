@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:background="#0699DC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/layout_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:layout_margin="15dip">
+
+            <ImageView
+                android:layout_width="200dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="10dip"
+                android:src="@drawable/fastcoologo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fastcoo Picker Appp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#0699DC"/>
+
+
+            <EditText
+
+                android:id="@+id/edt_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="10dip"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="25dp"
+                android:gravity="left"
+                android:hint="Email"
+                android:inputType="text"
+                android:padding="15dip"/>
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dip"
+                android:layout_margin="10dip"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_padlock"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textPassword"
+                android:drawablePadding="25dp"
+                android:hint="Password"/>
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="150dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/round_btn"
+                android:padding="15dip"
+                android:text="Login"
+                android:textColor="#fff"
+                android:textSize="15dip" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Colored rectangle-->
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="100dp"
+                android:height="40dp" />
+            <solid android:color="#5EB888" />
+            <corners android:radius="0dp"/>
+        </shape>
+    </item>
+
+    <!-- This rectangle for the top arrow edge -->
+    <!-- Its color should be the same as the layout's background -->
+
+
+    <!-- This rectangle for the lower arrow edge -->
+    <!-- Its color should be the same as the layout's background -->
+
+
+</layer-list>

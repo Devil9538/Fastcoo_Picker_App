@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0699DC</color>
+    <color name="colorPrimaryDark">#084D92</color>
+    <color name="colorAccent">#144995</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="main_text">#333333</color>
+    <color name="secondary_text">#808080</color>
+    <color name="transparent">#00000000</color>
+    <color name="fmp_red">#FB5062</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="blue_600">#1e88e5</color>
+    <color name="colorMenuInactive">#999999</color>
+</resources>

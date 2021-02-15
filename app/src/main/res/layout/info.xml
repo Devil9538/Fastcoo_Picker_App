@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    android:background="@drawable/dialog_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <TextView
+            android:id="@+id/tv_tell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number Of Todes Required"
+            android:textSize="15sp"
+            android:fontFamily="@font/lato_black"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fastcoo Picker App</string>
+    <string name="batch_pickup">Batch Pickup</string>
+    <string name="single_pickup">Single Pickup</string>
+    <string name="logout">Logout</string>
+    <string name="completed_pickup">Completed Pickup</string>
+    <string name="singlepickup">SinglePickup</string>
+    <string name="pickup_list">Pickup List</string>
+    <string name="pending_jobs">Pending Jobs</string>
+    <string name="shipment_list">Shipment List</string>
+    <string name="completed_list">Completed List</string>
+    <string name="autupickuplist">AutuPickupList</string>
+</resources>
